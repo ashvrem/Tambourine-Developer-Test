@@ -1,0 +1,32 @@
+/* Banner Section Stylings */
+
+.banner {
+  // height: 580px;
+
+  .carousel {
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 0;
+      z-index: 0;
+    }
+
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {display: block;}
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      height: 30px;
+      width: 30px;
+      
+      @include media-breakpoint-up(xl) {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    .carousel-control-next-icon {background-image: url("images/carousel/next-icon.svg");}
+
+    .carousel-control-prev-icon {background-image: url("images/carousel/prev-icon.svg");}
+  }
+}

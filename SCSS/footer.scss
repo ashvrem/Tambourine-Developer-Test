@@ -1,0 +1,30 @@
+/* Footer Styles */
+
+footer {
+  background: $bg-color-tertiary;
+  font-family: $font-family-sans-serif-medium;
+  padding: 19px 0;
+
+  span {
+    font-size: 1.143rem;
+    padding: 0 5px;
+  }
+
+  a {
+    color: $text-color-primary;
+    transition: $transition_text-color;
+
+    &:hover {
+      color: $btn_text-color-primary;
+      text-decoration: none;
+    }
+  }
+
+  .footer-sm {
+    @include media-breakpoint-up(md) {display: none;}
+  }
+
+  .footer-lg {
+    @include media-breakpoint-down(sm) {display: none;}
+  }
+}

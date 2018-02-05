@@ -1,0 +1,33 @@
+/* Color Variables */
+$bg-color-primary: #fff;
+$bg-color-secondary: #000;
+$bg-color-tertiary: #f1f2f2;
+
+$text-color-primary: #000;
+$text-color-secondary: #fff;
+$text-color-tertiary: #979fa4;
+
+$btn_text-color-primary: #e21f25;
+$btn_text-color-primary-hover: #fff;
+$btn_bg-color-primary: $btn_text-color-primary;
+$btn_bg-color-primary-hover: $btn_bg-color-primary;
+
+$box-shadow: 0 0 15px rgba(53, 53, 53, 0.3);
+
+
+/* Font Variables */
+$font-family-sans-serif: "gotham_book", sans-serif;
+$font-family-sans-serif-medium: "gotham_medium", sans-serif;
+$font-family-sans-serif-bold: "gotham_bold", sans-serif;
+$font-family-sans-serif-alt: "Arial", sans-serif;
+$font-family-serif: "bodoni", serif;
+
+$font-size-base: 14px;
+
+$font-weight-normal: 400;
+$font-weight-bold: 900;
+
+
+/* Transitions */
+$trasition_bg-color: ease background-color .2s;
+$transition_text-color: ease color .2s;

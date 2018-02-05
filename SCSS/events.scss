@@ -1,0 +1,63 @@
+/* Events Section Styles */
+
+.events {
+background-color: $bg-color-primary;
+  text-align: center;
+  padding: 52px 0 75px;
+
+  h4 {margin-bottom: 42px;}
+
+  .event {
+    background-size: cover;
+    box-shadow: $box-shadow;
+    height: 175px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {margin-bottom: 0;}
+
+    &.event-1 {background-image: url("images/events/event1.jpg");}
+
+    &.event-2 {background-image: url("images/events/event2.jpg");}
+
+    &.event-3 {
+      background-image: url("images/events/event3.jpg");
+
+      @include media-breakpoint-up(sm) {margin-bottom: 0;}
+    }
+
+    &.event-4 {
+      background-image: url("images/events/event4.jpg");
+      margin-bottom: 0;
+    }
+
+    .event__date {
+      background: #282930;
+      color: $text-color-secondary;
+      left: 0;
+      line-height: 1;
+      padding: 9px 28px 0 12px;
+      position: absolute;
+      transition: $trasition_bg-color;
+
+      &:hover {
+        background-color: $btn_bg-color-primary-hover;
+        text-decoration: none;
+      }
+
+      .event-day {
+        font-family: $font-family-sans-serif-bold;
+        font-size: 3.5rem;
+      }
+
+      .event-month {
+        font-family: $font-family-sans-serif;
+        font-size: 1rem;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+  }
+}

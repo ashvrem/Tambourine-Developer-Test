@@ -1,0 +1,38 @@
+/* Tagline Section Styles */
+
+.tagline {
+  // background: $bg-color-secondary;
+  color: $text-color-secondary;
+  font-family: $font-family-sans-serif-alt;
+  text-align: center;
+
+  h1, h2 {font-family: $font-family-serif;}
+
+  h1 {
+    font-size: 2rem;
+
+    @include media-breakpoint-up(xl) {font-size: 2.5rem;}
+  }
+
+  h2 {
+    font-size: 1.7rem;
+
+    @include media-breakpoint-up(xl) {font-size: 2rem;}
+  }
+
+  .container {
+    background: $bg-color-secondary;
+
+    @include media-breakpoint-up(md) {margin-top: 90px;}
+    @include media-breakpoint-up(lg) {margin-top: 172px;}
+    @include media-breakpoint-up(xl) {margin-top: 300px;}
+  }
+
+  .tagline__title {
+    border-top: 5px solid #fff;
+    margin-bottom: 42px;
+    padding-top: 37px;
+  }
+
+  .tagline__body {margin-bottom: 110px;}
+}

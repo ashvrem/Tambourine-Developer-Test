@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'bodoni';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/bodoni.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gotham_bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/gotham-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'gotham_book';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/gotham-book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gotham_medium';
+    src: url('fonts/gotham-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

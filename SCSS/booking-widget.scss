@@ -1,0 +1,149 @@
+/* Booking Widget Section Stylings */
+
+.booking-widget {
+  margin: 15px;
+
+  .btn-tab {
+    background: transparent;
+    border: 2px solid $btn_bg-color-primary;
+    border-radius: 4px;
+    color: $btn_text-color-primary;
+    display: block;
+    margin: 0 auto;
+    padding: 9px 12px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+      background-color: $bg-color-secondary;
+      border: none;
+      border-radius: 0;
+      color: $text-color-secondary;
+      position: absolute;
+      right: 0;
+      top: -275px;
+    }
+    @include media-breakpoint-up(lg) {top: -350px;}
+    @include media-breakpoint-up(xl) {
+      right: -38px;
+      top: -375px;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.modal {
+  &.right {
+    .modal-dialog {
+      height: auto;
+      margin: auto;
+  		position: fixed;
+      transform: translate3d(0%, 0, 0);
+  		width: 370px;
+
+      .booking-tab {
+        background-color: $bg-color-secondary;
+        color: $text-color-secondary;
+        display: inline-block;
+        left: -34px;
+        padding: 9px 12px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 162px;
+        transform: rotate(-90deg);
+      }
+  	}
+
+    .modal-content {
+      background-color: #1e1e1e;
+      color: $text-color-secondary;
+      height: 100%;
+      margin-left: 40px;
+  		overflow-y: auto;
+      width: 330px;
+  	}
+
+    .modal-header {
+      border-bottom: none;
+
+      .close {
+        color: $btn-text-color-primary;
+        opacity: 1;
+        text-shadow: none;
+        transition: $transition_text-color;
+
+        &:hover {color: $btn-text-color-primary-hover;}
+      }
+    }
+
+    .modal-body {
+      padding: 15px 56px 36px;
+
+      h1 {
+        font-family: $font-family-sans-serif-bold;
+        font-size: 2.173rem;
+        margin-bottom: 62px;
+        text-align: center;
+      }
+
+      p {
+        color: #979fa4;
+        font-family: $font-family-serif;
+        margin: 40px 0;
+        text-align: center;
+      }
+
+      .btn-primary {
+        display: block;
+        margin: 0 auto 66px;
+      }
+
+      .book-group {
+        color: #979fa4;
+        display: block;
+        margin: 0 auto;
+        text-transform: uppercase;
+        transition: $transition_text-color;
+
+        &:hover {
+          color: $btn_text-color-primary;
+          text-decoration: none;
+        }
+
+        img {width: 25px;}
+      }
+
+      .calendar-icon {
+        position: absolute;
+        right: 20px;
+        top: 9px;
+      }
+
+      .form-control {
+        font-family: $font-family-sans-serif;
+        font-size: 0.857rem;
+      }
+
+      label {
+        text-transform: uppercase;
+
+        &.error {
+          background-color: #ff0000;
+          color: $text-color-secondary;
+          padding: 2px 0;
+          text-align: center;
+          text-transform: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.right.fade {
+    .modal-dialog {
+      right: -370px;
+      transition: opacity 0.3s linear, right 0.3s ease-out;
+    }
+
+    &.show .modal-dialog {right: 0px;}
+  }
+}
